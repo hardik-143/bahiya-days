@@ -1,0 +1,966 @@
+@import url('./assets/css/font.css');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Philosopher', sans-serif; */
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.announcement_bar {
+    width: 100%;
+    height: auto;
+    background: #D9BAA0;
+}
+
+.announcement_bar p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+}
+
+
+/*./ anouncement end */
+
+nav {
+    background: #F2EDE7 !important;
+    min-height: 58px;
+}
+
+.collapse:not(.show) {
+    display: none !important;
+}
+
+
+/* .navbar_cont {
+    width: 80% !important;
+} */
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-link {
+    /* font-family: 'Sofia Pro'; */
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 11px;
+    line-height: 11px !important;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2B3F45 !important;
+}
+
+.navbar-brand .logo_text,
+.logo .logo_text {
+    color: #2B3F45;
+    font-weight: 300;
+    font-family: 'Philosopher', sans-serif;
+}
+.logo{
+    height: 42px;
+}
+.navbar-collapse{
+    display: none;
+}
+.navbar-beg {
+    margin-left: 6rem !important;
+}
+@media screen and (max-width:992px) {
+    .navbar-beg{
+        position: absolute;
+        top: 12px;
+        left: 19px;
+    }
+}
+
+/* .\ navbar menu */
+
+
+/* menu icon start */
+
+.menu_icon {
+    z-index: 10000 !important;
+    position: absolute;
+    top: 12px;
+    right: 1px;
+    cursor: pointer;
+    height: 35px;
+    width: 40px;
+    /* display: none; */
+    transform: rotate(180deg);
+}
+
+.menu_icon .top_bar,
+.middel_bar,
+.bottom_bar {
+    width: 23px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.top_bar {
+    width: 23px;
+    transition: 0.5s all;
+    background-color: black;
+}
+
+.middel_bar {
+    width: 23px;
+    height: 2px !important;
+    transition: 0.3s all;
+    background: black !important;
+}
+
+.bottom_bar {
+    width: 23px;
+    transition: 0.5s all;
+}
+
+.bottom_bar_hover {
+    width: 30px;
+    transform: rotate(316deg);
+    transform-origin: 9px 0px;
+}
+
+.middel_bar_hover {
+    width: 0;
+}
+
+.top_bar_hover {
+    width: 30px !important;
+    transform: rotate(224deg);
+    transform-origin: 17px 7px;
+}
+
+
+/* ./menu bar end */
+
+
+/* .\shop line start */
+
+.shop_line_div {
+    border-top: 1px solid #E8DCCC;
+}
+
+
+/* .shop_line {
+} */
+
+.shop_line div {
+    display: grid;
+    place-items: center;
+}
+
+
+/* ./shop line end */
+
+
+/* ....main frames start */
+
+.frame_one {
+    background: #E8DCCC;
+    min-height: 595px;
+    position: relative;
+}
+
+.frame_one div .title {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    color: #2B3F45;
+}
+
+.main_logo_text {
+    font-size: 88px;
+    line-height: 85px;
+    letter-spacing: -0.03em;
+    color: #2B3F45;
+    font-weight: 300;
+}
+
+.frame_one .left .info {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.01em;
+}
+
+.frame_one .left button,
+.frame_one_mobile button {
+    width: 118px;
+    height: 42px;
+    border: 1px solid #2B3F45;
+    transition: 0.6s all;
+}
+
+.frame_one .left button:hover {
+    background-color: #403731;
+    color: white;
+}
+
+.frame_one .right {
+    z-index: 10;
+}
+
+.first_wave_image {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+/*.../ mobile device home page.../*/
+
+.frame_one_mobile {
+    background: #E8DCCC;
+    min-height: 800px;
+    position: relative;
+    padding-top: 3rem;
+}
+
+.mobile_home_image {
+    width: 322px;
+    height: 327px;
+}
+
+.main_logo_text_mobile {
+    font-size: 62px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-weight: 300;
+}
+
+.frame_one_mobile .info_mobile {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+
+/* frame 2 start */
+
+.frame_two {
+    width: 100%;
+    height: 1138px;
+    background: #5A838F;
+    padding-top: 4rem;
+    position: relative;
+}
+
+.frame_two .para_div {
+    margin-top: 2rem;
+}
+
+.frame_two .para_one {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F2EDE7;
+    width: 502px;
+}
+
+.frame_two .para_two {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F2EDE7;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    width: 410px;
+}
+
+.main_chitah_logo {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.featured_items {
+    z-index: 123;
+}
+
+.featured_items .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F2EDE7;
+}
+
+.featured_items .info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F2EDE7;
+}
+
+.items_details {
+    margin-top: 3rem !important;
+    z-index: 3;
+}
+
+.card {
+    background: transparent !important;
+    border: none !important;
+    margin: 0 30px;
+}
+
+.card-body {
+    background-color: transparent !important;
+}
+
+.card .items {
+    width: 266px;
+    height: 266px;
+}
+
+.card-body .item_name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F2EDE7;
+}
+
+.card-body .item_price {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.featured_items .items_button {
+    width: 100px;
+    height: 42px;
+    left: 670px;
+    top: 1740.88px;
+    border: 1px solid #F2EDE7;
+    color: white;
+    transition: 0.4s all;
+}
+
+.featured_items .items_button:hover {
+    background-color: #D3E1E3;
+    color: #5A838F;
+}
+
+.frame_two_footer {
+    width: 100%;
+    /* z-index: 122; */
+    position: absolute;
+    bottom: 0px;
+    height: 343px;
+    background: #7BA2A8;
+}
+
+.frame_two_wave {
+    position: absolute;
+    bottom: 335px;
+    left: 0;
+}
+
+
+/* frame 2 end */
+
+
+/* frame 3 start */
+
+.frame_three {
+    width: 100%;
+    min-height: 728px;
+}
+
+.frame_three_right {
+    background: #E2C9B6;
+}
+
+.main_chitah_logo_frame3 {
+    /* background: #2B3F45; */
+}
+
+.frame_three_right .main_text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+}
+
+.frame_three_right .info_text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+}
+
+.frame_three_right .para_one {
+    width: 50%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+}
+
+.frame_three .frame_three_right button {
+    border: 1px solid #2B3F45 !important;
+    margin-top: 4rem !important;
+    margin-bottom: 1rem !important;
+    margin-top: 4rem !important;
+    transition: 0.4s all;
+}
+
+.frame_three .frame_three_right .frame_three_button:hover {
+    background-color: #403731;
+    border-color: #7BA2A8;
+    color: #efd5c1;
+}
+
+
+/* ./frame 3 end */
+
+
+/* frame 4 start */
+
+.frame_four {
+    height: 417px;
+    background: #D3E1E3;
+}
+
+.frame_four_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+}
+
+.frame_four_body .box {
+    width: auto;
+    height: 151px;
+    border-right: 1px solid #2B3F45;
+    /* margin: 10px; */
+}
+
+.frame_four_body .box .circle {
+    width: 96px;
+    height: 96px;
+    background-color: gray;
+}
+
+.frame_four_body .box .age {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #2B3F45;
+}
+
+.grownup_box {
+    border-right: 0 !important;
+}
+
+
+/* frame four footer start*/
+
+.frame_four_footer {
+    min-height: 238px;
+    background: #5A838F;
+}
+
+.frame_four_footer .footer_para .para_one {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F2EDE7;
+}
+
+
+/* ./frame four footer end*/
+
+
+/* ./ frame 4 end */
+
+
+/* frame five start */
+
+.frame_five {
+    width: 100%;
+    min-height: 500px;
+    Fill: Solid #F2EDE7;
+}
+
+.frame_five .frame_body .card {
+    /* width: 70%; */
+}
+
+.frame_five .frame_five_title h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+    margin-bottom: 4rem !important;
+}
+
+.frame_body .card img {
+    width: 100%;
+    height: 100%;
+}
+
+.frame_body .card .card-body .card-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+}
+
+.frame_five .frame_button button {
+    width: 100px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #2B3F45;
+    border: 1px solid #2B3F45;
+    transition: 0.4s all;
+}
+
+.frame_five .frame_button button:hover {
+    background-color: #5A838F;
+    color: white;
+    border-color: #5A838F;
+}
+
+
+/* frame five end */
+
+.frame_six_top {
+    min-height: 700px;
+    width: 100%;
+    background: #E8DCCC;
+}
+
+.frame_six_header {
+    padding-top: 8rem rem !important;
+    padding-bottom: 5rem!important;
+}
+
+.frame_six_top .frame_six_header h5 {
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+}
+
+.frame_six_top .frame_six_header p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+}
+
+
+/* .frame_six_body div .card {
+    margin: 0 63px !important;
+} */
+
+.frame_six_body .card img {
+    width: 340px;
+    height: 405px;
+}
+
+.frame_six_body .card .card-body .card-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2B3F45;
+    /* width: 80%; */
+}
+
+
+/* frame 6 bottom */
+
+.frame_six_bottom {
+    min-height: 453px;
+    background: #F2EDE7;
+}
+
+.frame_six_bottom div img {
+    width: 233px;
+    height: 233px;
+}
+
+
+/* frame 6 bottom end */
+
+
+/* frame 7 start */
+
+.frame_seven {
+    min-height: 549px;
+    background: #D3E1E3;
+    padding: 6rem 0;
+}
+
+.frame_seven .frame_seven_title {
+    font-weight: 400;
+    font-size: 69px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #2B3F45;
+}
+
+.frame_seven_iamge_mobile {}
+
+.frame_seven_iamge_one_bottom {
+    width: 242px;
+    height: 266px;
+    bottom: 4rem;
+    left: 0;
+}
+
+.frame_seven_iamge_two_top {
+    width: 242px;
+    height: 266px;
+    right: 0;
+    top: 4rem;
+}
+
+
+/* frame 7 end */
+
+
+/* ....main frames end */
+
+
+/* foooter start */
+
+footer .footer_top {
+    min-height: 308px;
+    background: url("./images/footer_pattern.png")
+}
+
+footer .footer_top {
+    padding-top: 4rem;
+    padding-bottom: 6rem !important;
+}
+
+footer .footer_top h1 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #F2EDE7;
+}
+
+.footer_search {
+    /* width: 432px;
+    height: 37px; */
+    /* width: 100%; */
+}
+
+.footer_search .row {
+    width: 100%;
+    margin: auto 0;
+}
+
+.input {}
+
+.footer_search .row input {
+    width: 312px;
+    height: 40px;
+    border: 1px solid #F2EDE7;
+    background-color: transparent;
+    overflow-x: scroll;
+}
+
+.footer_search .row input:focus {
+    box-shadow: none !important;
+}
+
+.footer_search .row button {
+    width: 120px;
+    height: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #CFAE93;
+    background: white;
+}
+
+.footer_main_logo {
+    width: 192px;
+    height: 192px;
+    background: #5A838F;
+}
+
+
+/* footer bottom */
+
+.footer_bottom {
+    min-height: 279px;
+    background: #5A838F;
+}
+
+.footer_bottom .section_links {
+    z-index: 123;
+    s
+}
+
+.footer_bottom .section_links a,
+.section_links_mobile_links {
+    text-decoration: none !important;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #F2EDE7 !important;
+}
+
+.social_media i {
+    color: white;
+    font-size: 20px;
+}
+
+.copyright .copyright_text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #F2EDE7;
+}
+
+
+/* footer section links for mobile devices */
+
+
+/* footer end */
+
+
+/* media query  */
+
+@media only screen and (max-width: 768px) {
+    .frame_two {
+        height: auto !important;
+    }
+    .frame_two .para_one {
+        width: 90%;
+        margin: auto;
+    }
+    .frame_two .para_two {
+        width: 90%;
+    }
+    .items_details {
+        margin-top: 1rem !important;
+    }
+    .main_chitah_logo {
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+    .frame_one_mobile {
+        padding-top: 2rem!important;
+    }
+    .frame_three {
+        min-height: auto !important;
+    }
+    .frame_three_button {
+        margin-top: 4rem !important;
+        margin-top: 3rem !important;
+        padding: 9px 27px!important;
+        /* width: 182px;
+        height: 42px; */
+    }
+    .frame_three .frame_three_right {
+        padding: 44px 0 !important;
+    }
+    .frame_three_right .para_one {
+        width: 50%;
+    }
+    .frame_three_right .main_text {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: 0.01em;
+        color: #2B3F45;
+    }
+    .frame_three_right .para_one {
+        width: 85%;
+    }
+    .grownup_box {
+        margin-bottom: 5rem;
+    }
+    .frame_four {
+        height: auto;
+        padding-bottom: 3rem !important;
+    }
+    .frame_four_heading {
+        margin-top: 4rem;
+    }
+    .frame_four_footer {
+        height: 336px;
+    }
+    .frame_four_footer .footer_para {
+        width: 80% !important;
+    }
+    .frame_six_bottom div img {
+        width: 165px;
+        height: 165px;
+    }
+    .frame_seven .frame_seven_title {
+        width: 80% !important;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: -0.03em;
+        color: #2B3F45;
+    }
+    footer .footer_top {
+        min-height: 308px;
+        background: #CFAE93;
+    }
+    .footer_main_logo {
+        width: 140px;
+        height: 140px;
+    }
+    .footer_main_logo .footer_main_logo_group {
+        width: 112px;
+        height: 61px;
+    }
+}
+
+@media only screen and (max-width: 1420px) {
+    .frame_two {
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .nav-item {
+        margin: 5px;
+    }
+    .frame_four_body .box {
+        border-right: 0;
+        width: 80%;
+        border-bottom: 1px solid #2b3f45;
+    }
+    .frame_four {
+        height: auto !important;
+    }
+}
+
+@media only screen and (max-width: 1029px) {
+    .navbar-brand {
+        display: none;
+    }
+    .navbar-nav {
+        display: none;
+    }
+    /* .navbar-beg {
+        display: none;
+    } */
+}
+
+@media only screen and (max-width: 300px) {
+    .mobile_home_image {
+        width: 223px;
+        height: 261px;
+    }
+    .card {
+        width: 100%;
+    }
+    .card .items {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .frame_five .frame_body .card {
+        width: 60% !important;
+        margin: 0 !important;
+    }
+    .frame_six_body .card img {
+        width: 75% !important;
+        height: 75% !important;
+    }
+    .frame_six_body div .card {
+        margin: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 385px) {
+    .frame_six_body .card img {
+        width: 75% !important;
+        height: 75% !important;
+    }
+}
+
+@media (min-width:760px) and (max-width:1300px) {
+    .frame_four {
+        height: auto !important;
+        padding: 3rem 0 !important;
+    }
+    .frame_four_body .box {
+        border-right: 1px solid #2B3F45;
+        width: auto;
+        height: auto !important;
+        border-bottom: 0;
+        margin: 10px;
+    }
+}
